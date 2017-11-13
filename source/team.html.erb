@@ -1,0 +1,14 @@
+<div id="about">
+  <div class="about-content">
+    <h1>The best buddy of the day <i class="fa fa-heart"></i></h1>
+      <ul class="list-inline text-center">
+        <% ["anthonyhamou", "edouardduvg"].each do |gh_username| %>
+          <li>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-square" %>
+            <h3><%= gh_username.capitalize %></h3>
+          </li>
+        <% end %>
+      </ul>
+  </div>
+</div>
+
